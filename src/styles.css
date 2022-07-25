@@ -1,0 +1,140 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;    
+
+@layer base {
+    body {
+        font-family: 'Work Sans', sans-serif;
+        @apply text-neutral-500;
+        @apply m-4;
+    }
+
+    .comp-title {
+        @apply text-brand-300;
+        @apply mb-2;
+    }
+
+    .comp-group {
+    @apply mb-8;
+}
+
+
+
+    .comp-group > * {
+    @apply mb-2;
+}
+
+    h1 {
+        @apply text-2xl font-semibold;
+    }
+
+    h2 {
+        @apply text-xl font-semibold;
+    }
+
+    h3 {
+        @apply text-lg font-medium;
+    }
+
+    p {
+        @apply text-base font-regular;
+    }
+    .p-sm{
+        @apply text-sm;
+    }
+
+    .subtext{
+        @apply text-xs;
+    }
+
+    button {
+        @apply font-medium text-base; 
+        @apply py-3 px-4;
+        @apply rounded-lg;
+        @apply flex items-center;
+    }
+
+    button svg {
+        @apply w-5 h-5;
+    }
+
+    .btn-primary {
+        @apply bg-brand-500
+        @apply text-white;
+    }
+
+    .btn-primary:hover {
+        @apply bg-brand-600;
+    }
+
+    .btn-icon-after span {
+        @apply mr-2.5;
+    }
+
+    .btn-icon-before span {
+        @apply ml-2.5;
+    }
+
+    .btn-outlined {
+        @apply bg-transparent hover:bg-brand-200;
+        @apply text-brand-500 
+        @apply border-2 border-brand-500;
+    }
+
+    button:disabled,
+    button[disabled] {
+        @apply bg-neutral-200 ;
+        @apply text-neutral-300;
+    }
+
+    label {
+        @apply text-neutral-500 text-sm font-medium; 
+        @apply mb-1;
+        @apply block;
+    }
+
+    input, select {
+        @apply block;
+        @apply bg-neutral-100;
+        @apply text-neutral-400 text-base focus:text-neutral-500; 
+        @apply rounded-lg; 
+        @apply p-3;
+    }
+
+    .tabs-container {
+        @apply text-neutral-300 text-base font-medium text-center;
+        @apply border-b-2 border-brand-300;
+    }
+
+    .tabs-container > ul {
+        @apply flex flex-wrap -mb-px;
+    }
+
+    .tabs-container > ul > li {
+        @apply mr-2;
+    }
+    .tabs-container > ul > li > a {
+        @apply p-4;
+        @apply border-b-2 border-transparent hover:border-brand-400;
+        @apply hover:text-brand-400;
+        @apply inline-block;
+    }
+
+    .tabs-container > ul > li > a.active {
+        @apply text-brand-500 border-brand-500;
+    }
+
+    .card {
+        @apply bg-white shadow;
+        @apply p-3;
+    }
+    
+    .card p {
+        @apply text-neutral-300;
+    }
+
+   
+
+
+};
