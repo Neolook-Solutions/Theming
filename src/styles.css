@@ -11,15 +11,13 @@
     }
 
     .comp-title {
-        @apply text-brand-300;
+        @apply text-neutral-300;
         @apply mb-2;
     }
 
     .comp-group {
     @apply mb-8;
 }
-
-
 
     .comp-group > * {
     @apply mb-2;
@@ -38,7 +36,7 @@
     }
 
     p {
-        @apply text-base font-regular;
+        @apply text-base;
     }
     .p-sm{
         @apply text-sm;

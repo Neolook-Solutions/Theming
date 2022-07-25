@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -7,19 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
 
-  @Input() type: string = 'simple'
-  @Input() color: string = 'teal'
-  @Input() text: string
+  @Input() type: string = ""
+  @Input() text: string = ""
   constructor() { }
 
   ngOnInit(): void {
   }
   getStyles() {
     switch (this.type) {
-      case 'primary':
-        return `bg-${this.color}-500 hover:bg-${this.color}-600 text-white font-bold py-2 px-4 rounded mb-2 border border-${this.color} mx-2`
+      case 'soft':
+        return `bg-brand-300 hover:bg-brand-350 text-neutral-500 font-medium text-base py-3 px-4 rounded-lg`
       case 'outline':
-        return `hover:bg-${this.color}-500 text-${this.color}-600 font-semibold hover:text-white py-2 px-4 border border-${this.color}-500 hover:border-transparent rounded mb-2 mx-2`
+        return `bg-transparent hover:bg-brand-200 text-brand-500 border-2 border-brand-500 font-medium text-base py-3 px-4 rounded-lg`
+      case 'disabled':
+        return `bg-neutral-200 text-neutral-400 font-medium text-base py-3 px-4 rounded-lg`
+      default:
+        return `bg-brand-500 hover:bg-brand-600 text-white font-medium text-base py-3 px-4 rounded-lg`
     }
   }
 
