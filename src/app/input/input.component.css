@@ -1,0 +1,13 @@
+label {
+    @apply text-neutral-500 text-sm font-medium; 
+    @apply mb-1;
+    @apply block;
+}
+
+input, select {
+    @apply block;
+    @apply bg-neutral-100;
+    @apply text-neutral-400 text-base focus:text-neutral-500; 
+    @apply rounded-lg; 
+    @apply p-3;
+}

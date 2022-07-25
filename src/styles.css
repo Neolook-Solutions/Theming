@@ -45,61 +45,7 @@
     .subtext{
         @apply text-xs;
     }
-
-    button {
-        @apply font-medium text-base; 
-        @apply py-3 px-4;
-        @apply rounded-lg;
-        @apply flex items-center;
-    }
-
-    button svg {
-        @apply w-5 h-5;
-    }
-
-    .btn-primary {
-        @apply bg-brand-500
-        @apply text-white;
-    }
-
-    .btn-primary:hover {
-        @apply bg-brand-600;
-    }
-
-    .btn-icon-after span {
-        @apply mr-2.5;
-    }
-
-    .btn-icon-before span {
-        @apply ml-2.5;
-    }
-
-    .btn-outlined {
-        @apply bg-transparent hover:bg-brand-200;
-        @apply text-brand-500 
-        @apply border-2 border-brand-500;
-    }
-
-    button:disabled,
-    button[disabled] {
-        @apply bg-neutral-200 ;
-        @apply text-neutral-300;
-    }
-
-    label {
-        @apply text-neutral-500 text-sm font-medium; 
-        @apply mb-1;
-        @apply block;
-    }
-
-    input, select {
-        @apply block;
-        @apply bg-neutral-100;
-        @apply text-neutral-400 text-base focus:text-neutral-500; 
-        @apply rounded-lg; 
-        @apply p-3;
-    }
-
+   
     .tabs-container {
         @apply text-neutral-300 text-base font-medium text-center;
         @apply border-b-2 border-brand-300;
