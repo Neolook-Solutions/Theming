@@ -1,1 +1,5 @@
-<button [class]="getStyles()">{{text}}</button>
+<button [class]="getStyles()">
+    <app-icon name={{iconNameBefore}}></app-icon>
+    {{text}}
+    <app-icon name={{iconNameAfter}}></app-icon>
+</button>

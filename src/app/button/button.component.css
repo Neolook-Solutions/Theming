@@ -1,0 +1,6 @@
+button {
+    @apply font-medium text-base gap-2; 
+    @apply py-3 px-4;
+    @apply rounded-lg;
+    @apply flex items-center;
+}

@@ -1,0 +1,17 @@
+
+app-card {
+    @apply max-w-sm bg-brand-300 drop-shadow-lg;
+    @apply rounded-lg;
+}
+
+h2 {
+    @apply text-posit-300;
+}
+
+app-icon {
+    @apply text-posit-200;
+}
+
+.input {
+    @apply flex items-end;
+}

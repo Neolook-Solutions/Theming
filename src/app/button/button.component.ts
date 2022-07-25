@@ -9,6 +9,8 @@ export class ButtonComponent implements OnInit {
 
   @Input() type: string = ""
   @Input() text: string = ""
+  @Input() iconNameBefore: string = ""
+  @Input() iconNameAfter: string = ""
   constructor() { }
 
   ngOnInit(): void {
@@ -16,13 +18,13 @@ export class ButtonComponent implements OnInit {
   getStyles() {
     switch (this.type) {
       case 'soft':
-        return `bg-brand-300 hover:bg-brand-350 text-neutral-500 font-medium text-base py-3 px-4 rounded-lg`
+        return `bg-brand-300 hover:bg-brand-350 transition ease-in-out delay-150 shadow-sm hover:shadow-brand-500 text-neutral-500 font-medium text-base py-3 px-4 rounded-lg`
       case 'outline':
         return `bg-transparent hover:bg-brand-200 text-brand-500 border-2 border-brand-500 font-medium text-base py-3 px-4 rounded-lg`
       case 'disabled':
         return `bg-neutral-200 text-neutral-400 font-medium text-base py-3 px-4 rounded-lg`
       default:
-        return `bg-brand-500 hover:bg-brand-600 text-white font-medium text-base py-3 px-4 rounded-lg`
+        return `bg-brand-500 hover:bg-brand-600 shadow-lg shadow-[#CD420C2B] text-white font-medium text-base py-3 px-4 rounded-lg `
     }
   }
 
