@@ -1,16 +1,15 @@
+.cardje {
+    @apply max-w-sm w-80 rounded-xl overflow-hidden shadow-xl px-6 py-6;
+}
 
-app-card {
-    @apply max-w-sm bg-brand-300 drop-shadow-lg;
-    @apply rounded-lg;
+p {
+    @apply mb-6 text-neutral-400;
 }
 
 h2 {
-    @apply text-posit-300;
+    @apply text-4xl mr-2;
 }
 
-app-icon {
-    @apply text-posit-200;
-}
 
 .input {
     @apply flex items-end;

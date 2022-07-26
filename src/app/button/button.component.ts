@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
 
-  @Input() type: string = ""
+  @Input() type?: 'soft' | 'outline' | 'disabled';
   @Input() text: string = ""
   @Input() iconNameBefore: string = ""
   @Input() iconNameAfter: string = ""
@@ -24,7 +24,7 @@ export class ButtonComponent implements OnInit {
       case 'disabled':
         return `bg-neutral-200 text-neutral-400 font-medium text-base py-3 px-4 rounded-lg`
       default:
-        return `bg-brand-500 hover:bg-brand-600 shadow-lg shadow-[#CD420C2B] text-white font-medium text-base py-3 px-4 rounded-lg `
+        return `bg-brand-500 hover:bg-brand-600 text-white font-medium text-base py-3 px-4 rounded-lg `
     }
   }
 

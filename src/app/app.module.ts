@@ -8,6 +8,9 @@ import { ButtonComponent } from './button/button.component';
 import { InputComponent } from './input/input.component';
 import { CardComponent } from './card/card.component';
 import { IconComponent } from './icon/icon.component';
+import { TabContainerComponent } from './tab-container/tab-container.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { IconComponent } from './icon/icon.component';
     ButtonComponent,
     InputComponent,
     CardComponent,
-    IconComponent
+    IconComponent,
+    TabContainerComponent,
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

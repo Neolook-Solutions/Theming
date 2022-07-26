@@ -1,9 +1,8 @@
-<div class="max-w-sm rounded overflow-hidden drop-shadow-lg">
-    <div class="px-6 py-4">
-        <p>{{title}}</p>
-        <div class="input">
-            <h2>{{amount}}</h2>
-            <app-icon name={{iconName}}></app-icon>
-        </div>
-        
+<div class="cardje">
+    <p>{{title}}</p>
+    <div class="input">
+        <h2 [class]="getColour()">{{amount}}</h2>
+        <app-icon [class]="getIconColour()" name={{iconName}}></app-icon>
+    </div>
 </div>
+
