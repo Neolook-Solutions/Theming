@@ -11,6 +11,11 @@ import { IconComponent } from './icon/icon.component';
 import { TabContainerComponent } from './tab-container/tab-container.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { TableComponent } from './table/table.component';
+import { OverviewComponent } from './overview/overview.component';
+import { StatusComponent } from './status/status.component';
+import { StatusInactiveComponent } from './status-inactive/status-inactive.component';
+import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +26,12 @@ import { LoginComponent } from './login/login.component';
     IconComponent,
     TabContainerComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    TableComponent,
+    OverviewComponent,
+    StatusComponent,
+    StatusInactiveComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,

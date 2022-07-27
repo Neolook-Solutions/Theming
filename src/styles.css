@@ -7,7 +7,7 @@
 @layer base {
     body {
         font-family: 'Work Sans', sans-serif;
-        @apply text-neutral-500
+        @apply text-neutral-500 min-h-screen mx-10 bg-gradient-to-br from-brand-100 to-brand-200;
     }
 
     .comp-title {
@@ -28,7 +28,7 @@
     }
 
     h2 {
-        @apply text-xl font-semibold;
+        @apply text-xl font-semibold mb-4;
     }
 
     h3 {
@@ -36,47 +36,30 @@
     }
 
     p {
-        @apply text-base;
+        @apply text-base font-normal;
     }
-    .p-sm{
-        @apply text-sm;
-    }
-
-    .subtext{
-        @apply text-xs;
-    }
-   
-    .tabs-container {
-        @apply text-neutral-300 text-base font-medium text-center;
-        @apply border-b-2 border-brand-300;
+    .p-sm {
+        @apply text-sm font-normal;
     }
 
-    .tabs-container > ul {
-        @apply flex flex-wrap -mb-px;
-    }
-
-    .tabs-container > ul > li {
-        @apply mr-2;
-    }
-    .tabs-container > ul > li > a {
-        @apply p-4;
-        @apply border-b-2 border-transparent hover:border-brand-400;
-        @apply hover:text-brand-400;
-        @apply inline-block;
-    }
-
-    .tabs-container > ul > li > a.active {
-        @apply text-brand-500 border-brand-500;
-    }
-
-    .card {
-        @apply bg-white shadow;
-        @apply p-3;
+    .subtext {
+        @apply text-xs font-light;
+    
     }
     
-    .card p {
-        @apply text-neutral-300;
+
+    .top-page {
+        @apply text-brand-600 mb-10 flex justify-between items-end;
     }
+
+    .page-actions {
+        @apply flex gap-4;
+    }
+
+    .pa-right {
+        @apply justify-end
+    }
+   
 
     .material-icons-round {
         font-weight: normal;
@@ -101,6 +84,7 @@
         /* Support for IE. */
         font-feature-settings: 'liga';
       }
+      
       
 
    

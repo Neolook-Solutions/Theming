@@ -1,0 +1,27 @@
+.overview-table {
+    @apply bg-white rounded-lg shadow-lg mb-10;
+}
+
+td {
+ @apply leading-4 p-6 text-left text-neutral-500 w-1/12;
+}
+
+tr {
+    @apply border-b-2;
+}
+
+th {
+    @apply leading-4 p-6 p-sm font-normal text-left text-neutral-400 border-b-2;
+}
+
+tr td:first-child {
+    @apply  font-medium w-2/12;
+}
+
+tr:last-of-type {
+    @apply border-none;
+}
+
+.amount-people {
+    @apply flex gap-2;
+}
