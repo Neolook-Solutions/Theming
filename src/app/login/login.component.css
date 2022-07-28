@@ -10,6 +10,3 @@
   @apply m-auto;  
 }
 
-.full-button button {
-    @apply w-full block;
-}

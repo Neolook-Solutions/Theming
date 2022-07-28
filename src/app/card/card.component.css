@@ -1,5 +1,5 @@
 .card-data {
-    @apply max-w-sm w-80 rounded-xl overflow-hidden shadow-lg px-6 py-6;
+    @apply max-w-sm w-80 bg-white rounded-xl overflow-hidden shadow-lg px-6 py-6;
 }
 
 p {

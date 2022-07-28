@@ -16,6 +16,7 @@ import { OverviewComponent } from './overview/overview.component';
 import { StatusComponent } from './status/status.component';
 import { StatusInactiveComponent } from './status-inactive/status-inactive.component';
 import { DetailComponent } from './detail/detail.component';
+import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { DetailComponent } from './detail/detail.component';
     OverviewComponent,
     StatusComponent,
     StatusInactiveComponent,
-    DetailComponent
+    DetailComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,

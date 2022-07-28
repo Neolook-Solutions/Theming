@@ -24,11 +24,11 @@
 }
 
     h1 {
-        @apply text-2xl font-semibold;
+        @apply text-2xl font-medium;
     }
 
     h2 {
-        @apply text-xl font-semibold mb-4;
+        @apply text-xl font-medium mb-4;
     }
 
     h3 {
@@ -49,17 +49,24 @@
     
 
     .top-page {
-        @apply text-brand-600 mb-10 flex justify-between items-end;
+        @apply text-brand-600 mb-10 flex flex-wrap gap-y-4 justify-between items-end;
     }
 
     .page-actions {
-        @apply flex gap-4;
+        @apply flex flex-wrap gap-4 w-full md:w-fit;
+    }
+    
+    .page-actions app-button {
+        @apply w-full md:w-fit;
     }
 
     .pa-right {
         @apply justify-end
     }
    
+    .surface {
+        @apply bg-white rounded-lg p-10 flex flex-col gap-4 mb-10 shadow-lg;
+    }
 
     .material-icons-round {
         font-weight: normal;

@@ -1,0 +1,26 @@
+<div class="content app-page" role="main">
+    <div class="top-page">
+        <div class="page-title">
+            <p>Camera 325</p>
+            <h1>Room - 02.105</h1>
+        </div>
+        <div class="page-actions">
+            <app-button [iconNameAfter]="'arrow_forward'" [type]="'outline'" text="Watch livestream"></app-button>
+            <app-button [iconNameBefore]="'visibility_off'" text="Turn device off"></app-button>
+        </div>
+    </div>
+    <app-tab-container [firstEntry]="'Access'" [secondEntry]="'Settings'"></app-tab-container>
+    <div class="surface">
+        <h2>Basic settings</h2>
+        <div class="flex flex-row items-end gap-4">
+            <app-input [labeltext]="'Device name'" [type]="'text'" text="Tilburg - 02.105"></app-input>
+            <app-button [type]="'disabled'" text="Save changes"></app-button>
+        </div>
+    </div>
+    <h2>Danger zone</h2>
+    <div class="page-actions">
+        <app-button [iconNameAfter]="'do_not_disturb_on'" text="Unassign device"></app-button>
+        <app-button [iconNameAfter]="'delete'" [type]="'outline'" text="Remove device"></app-button>
+        <app-button [iconNameAfter]="'visibility_off'" [type]="'outline'" text="Hide device"></app-button>
+    </div>
+</div>
