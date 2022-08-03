@@ -17,6 +17,8 @@ import { StatusComponent } from './status/status.component';
 import { StatusInactiveComponent } from './status-inactive/status-inactive.component';
 import { DetailComponent } from './detail/detail.component';
 import { SettingsComponent } from './settings/settings.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { BackgroundBlursComponent } from './background-blurs/background-blurs.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { SettingsComponent } from './settings/settings.component';
     StatusComponent,
     StatusInactiveComponent,
     DetailComponent,
-    SettingsComponent
+    SettingsComponent,
+    NavbarComponent,
+    BackgroundBlursComponent
   ],
   imports: [
     BrowserModule,

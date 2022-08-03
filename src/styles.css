@@ -7,7 +7,7 @@
 @layer base {
     body {
         font-family: 'Work Sans', sans-serif;
-        @apply text-neutral-500 min-h-screen mx-10 bg-gradient-to-br from-brand-100 to-brand-200;
+        @apply text-neutral-500 min-h-screen bg-gradient-to-br from-brand-100 to-brand-200;
     }
 
     .comp-title {
@@ -52,20 +52,30 @@
         @apply text-brand-600 mb-10 flex flex-wrap gap-y-4 justify-between items-end;
     }
 
-    .page-actions {
-        @apply flex flex-wrap gap-4 w-full md:w-fit;
+    .bottom-page {
+        @apply flex flex-wrap gap-4 justify-end;
     }
     
-    .page-actions app-button {
+    .page-title, .top-button {
         @apply w-full md:w-fit;
     }
 
-    .pa-right {
-        @apply justify-end
+    .top-button {
+        @apply w-full md:w-fit;
     }
+
+    
    
     .surface {
         @apply bg-white rounded-lg p-10 flex flex-col gap-4 mb-10 shadow-lg;
+    }
+
+    .content {
+        @apply flex flex-col gap-8 mt-4;
+    }
+
+    .container {
+        @apply p-4 md:p-0;
     }
 
     .material-icons-round {
@@ -91,10 +101,14 @@
         /* Support for IE. */
         font-feature-settings: 'liga';
       }
-      
-      
-
-   
-
 
 };
+@layer utilities {
+    .animation-delay-2000 {
+      animation-delay: 2s;
+    }
+    .animation-delay-4000 {
+      animation-delay: 4s;
+    }
+  }
+  

@@ -1,16 +1,19 @@
-<div class="content app-page" role="main">
+<div class="pt-10 mx-auto container content app-page" role="main">
     <div class="top-page">
         <div class="page-title">
             <p>Rooms</p>
             <h1>Overview</h1>
         </div>
-        <div class="page-actions">
+        <div class="top-button w-full md:w-fit">
             <app-button [iconNameAfter]="'refresh'" [type]="'soft'" text="Refresh"></app-button>
         </div>
     </div>
     <app-table></app-table>
-    <div class="page-actions pa-right">
-        <app-button [iconNameBefore]="'visibility_off'" [type]="'outline'" text="Turn all devices off"></app-button>
-        <app-button [iconNameBefore]="'add'" [type]="'soft'" text="Add new device"></app-button>
-    </div>
+    <div class="bottom-page">
+        <div class="top-button w-full md:w-fit">
+            <app-button [iconNameAfter]="'visibility_off'" [type]="'outline'" text="Turn all devices off"></app-button>
+        </div>
+        <div class="top-button w-full md:w-fit">
+            <app-button [iconNameAfter]="'add'" [type]="'soft'" text="Add new device"></app-button>
+        </div>
 </div>

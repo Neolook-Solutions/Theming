@@ -3,4 +3,5 @@ button {
     @apply py-2.5 px-3;
     @apply rounded-lg;
     @apply flex items-center text-center justify-center border-2;
+    @apply w-full;
 }

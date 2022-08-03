@@ -11,11 +11,11 @@ tr {
 }
 
 th {
-    @apply leading-4 p-6 p-sm font-normal text-left text-neutral-400 border-b-2;
+    @apply leading-4 p-6 text-left text-sm font-normal text-neutral-400 border-b-2;
 }
 
 tr td:first-child {
-    @apply  font-medium w-2/12;
+    @apply  font-light w-2/12;
 }
 
 tr:last-of-type {
