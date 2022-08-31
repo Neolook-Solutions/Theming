@@ -1,23 +1,31 @@
-<div class="content app-page" role="main">
+<div class="container content app-page" role="main">
     <div class="top-page">
         <div class="page-title">
             <p>Camera 325</p>
             <h1>Room - 02.105</h1>
         </div>
-        <div class="page-actions">
-            <app-button [iconNameAfter]="'arrow_forward'" [type]="'outline'" text="Watch livestream"></app-button>
-            <app-button [iconNameBefore]="'visibility_off'" text="Turn device off"></app-button>
+        <div class="top-page-left">
+            <div class="action-button">
+                <app-button [iconNameAfter]="'arrow_forward'" [type]="'outline'" text="Watch livestream"></app-button>
+            </div>
+            <div class="action-button">
+                <app-button [iconNameBefore]="'visibility_off'" text="Turn device off"></app-button>
+            </div>
         </div>
     </div>
-    <app-tab-container [firstEntry]="'Access'" [secondEntry]="'Settings'"></app-tab-container>
-    <div class="comp-group flex gap-4">
-        <app-card title="People watching right now" [color]="'right-now'" amount="2" iconName="group"></app-card>
+    <app-tab-container [firstEntry]="'Parents'" [secondEntry]="'Settings'"></app-tab-container>
+    <div class="comp-group flex gap-4 flex-wrap grow shrink-0 basis-full items-stretch">
+        <app-actioncard></app-actioncard>
         <app-card title="Total views" [color]="'sum'" amount="4" iconName="trending_up"></app-card>
     </div>
     <h2>Parents</h2>
-    <div class="page-actions">
-        <app-button [iconNameAfter]="'person_add'" text="Add parent"></app-button>
-        <app-button [iconNameAfter]="'person_add_disabled'" [type]="'outline'" text="Stop parent registration"></app-button>
+    <div class="bottom-page-left">
+        <div class="action-button">
+            <app-button [iconNameAfter]="'person_add'" text="Add parent"></app-button>
+        </div>
+        <div class="action-button">
+            <app-button [iconNameAfter]="'person_add_disabled'" [type]="'outline'" text="Stop parent registration">
+            </app-button>
+        </div>
     </div>
 </div>
-

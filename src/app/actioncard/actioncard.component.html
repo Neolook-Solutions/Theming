@@ -1,0 +1,16 @@
+<div class="card-data flex flex-col">
+    <div class="flex">
+        <p class="grow">Status</p>
+        <app-status class="grow-0" [type]="'active'"></app-status>
+    </div>
+    <div class="flex">
+        <p class="grow">People watching</p>
+        <div class="flex gap-1">
+            <app-icon class="text-posit-200" name="group"></app-icon>
+            <p class="text-posit-400">1</p>
+        </div>
+
+    </div>
+    <app-button [type]="'green'" text="Watch livestream" iconNameAfter="videocam"></app-button>
+
+</div>

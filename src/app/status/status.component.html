@@ -1,9 +1,7 @@
 <div class="status flex items-center gap-1">
     <span class="flex">
-        <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-posit-300 opacity-75"></span>
-        <span class="'relative inline-flex rounded-full h-3 w-3 bg-posit-300"></span>
+        <span [class]="getBulbStylesAnimate()"></span>
+        <span [class]="getStyles()"></span>
     </span>
-    <p>Actief</p>
+    <p [class]="getTextStyles()"> {{getText()}}</p>
 </div>
-
-

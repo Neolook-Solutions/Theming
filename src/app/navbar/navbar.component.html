@@ -1,22 +1,26 @@
-<nav class="relative flex bg-white shadow-sm">
-    <div class="container mx-auto flex flex-wrap items-center content-center">
-        <div class="flex items-center content-center flex-grow justify-center w-full lg:w-auto gap-2">
+<nav class="relative flex bg-white shadow-sm px-4">
+    <div class="container mx-auto flex items-center content-center">
+        <a class="flex items-center text-sm text-brand-400 hover:text-brand-500" href="#pablo">
+            <app-icon _ngcontent-fxk-c26="" name="arrow_back" class="text-brand-400" _nghost-fxk-c16=""
+                ng-reflect-name="group"><span _ngcontent-fxk-c16="" class="material-icons-round">arrow-left</span>
+            </app-icon>
+            <span class="ml-2 hidden md:inline">Back</span>
+        </a>
+        <div class="flex items-center content-center flex-grow justify-center lg:w-auto gap-2">
             <img class="h-12 my-2 self-center mr-2" src="../../assets/Neolook_logo.webp">
             <h2 class="mb-0">Neolook</h2>
             <span class="text-brand-500 text-light ">S2S Family</span>
         </div>
-        <div class="lg:flex flex-grow-0 items-center hidden" id="example-collapse-navbar">
-            <ul class="flex">
-                <li class="nav-item">
-                    <a class="flex items-center text-sm text-neutral-400 hover:text-neutral-500" href="#pablo">
-                        <app-icon _ngcontent-fxk-c26="" name="logout" class="text-neutral-400" _nghost-fxk-c16=""
-                            ng-reflect-name="group"><span _ngcontent-fxk-c16=""
-                                class="material-icons-round">group</span></app-icon>
-                        <span class="ml-2">Log out</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
+        <ul class="flex">
+            <li class="nav-item block">
+                <a class="flex items-center text-sm text-neutral-400 hover:text-neutral-500" href="#pablo">
+                    <app-icon _ngcontent-fxk-c26="" name="logout" class="text-neutral-400" _nghost-fxk-c16=""
+                        ng-reflect-name="group"><span _ngcontent-fxk-c16="" class="material-icons-round">group</span>
+                    </app-icon>
+                    <span class="ml-2 hidden md:inline">Log out</span>
+                </a>
+            </li>
+        </ul>
     </div>
 </nav>
 <script>

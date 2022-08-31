@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
 
-  @Input() type?: 'soft' | 'outline' | 'disabled';
+  @Input() type?: 'soft' | 'outline' | 'disabled' | 'green';
   @Input() text: string = ""
   @Input() iconNameBefore: string = ""
   @Input() iconNameAfter: string = ""
@@ -20,6 +20,8 @@ export class ButtonComponent implements OnInit {
     switch (this.type) {
       case 'soft':
         return `bg-brand-300 hover:bg-brand-350 text-neutral-500 border-brand-300 flex w-full md:w-fit ${this.extraClass}`
+      case 'green':
+        return `bg-posit-100 hover:bg-posit-200 text-posit-400 border-posit-100 hover:border-posit-100 flex w-full md:w-fit ${this.extraClass}`
       case 'outline':
         return `bg-transparent hover:bg-brand-200 text-brand-500 border-brand-500 flex w-full md:w-fit ${this.extraClass}`
       case 'disabled':

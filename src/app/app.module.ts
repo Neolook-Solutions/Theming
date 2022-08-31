@@ -19,6 +19,10 @@ import { DetailComponent } from './detail/detail.component';
 import { SettingsComponent } from './settings/settings.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BackgroundBlursComponent } from './background-blurs/background-blurs.component';
+import { ActioncardComponent } from './actioncard/actioncard.component';
+import { DefineNameComponent } from './define-name/define-name.component';
+import { GiveAccessComponent } from './give-access/give-access.component';
+import { ToggleComponent } from './toggle/toggle.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +41,11 @@ import { BackgroundBlursComponent } from './background-blurs/background-blurs.co
     DetailComponent,
     SettingsComponent,
     NavbarComponent,
-    BackgroundBlursComponent
+    BackgroundBlursComponent,
+    ActioncardComponent,
+    DefineNameComponent,
+    GiveAccessComponent,
+    ToggleComponent
   ],
   imports: [
     BrowserModule,

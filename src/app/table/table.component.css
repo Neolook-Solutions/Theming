@@ -7,11 +7,15 @@ td {
 }
 
 tr {
-    @apply border-b-2;
+    @apply border-b-2 hover:bg-neutral-100;
 }
 
 th {
     @apply leading-4 p-6 text-left text-sm font-normal text-neutral-400 border-b-2;
+}
+
+thead tr:first-child {
+    @apply hover:bg-white;
 }
 
 tr td:first-child {

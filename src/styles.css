@@ -21,18 +21,16 @@
 
     .comp-group > * {
     @apply mb-2;
+    @apply w-full md:w-80;
 }
+
 
     h1 {
         @apply text-2xl font-medium;
     }
 
     h2 {
-        @apply text-xl font-medium mb-4;
-    }
-
-    h3 {
-        @apply text-lg font-medium;
+        @apply text-lg font-medium mb-4;
     }
 
     p {
@@ -52,31 +50,39 @@
         @apply text-brand-600 mb-10 flex flex-wrap gap-y-4 justify-between items-end;
     }
 
-    .bottom-page {
-        @apply flex flex-wrap gap-4 justify-end;
+
+    .bottom-page-right {
+        @apply justify-end w-full;
+    }
+
+    .bottom-page-left {
+        @apply w-full;
+    }
+
+    .top-page-left, .bottom-page-left, .bottom-page-right {
+        @apply flex flex-wrap gap-4;
     }
     
-    .page-title, .top-button {
+    .page-title, .action-button {
         @apply w-full md:w-fit;
     }
 
-    .top-button {
-        @apply w-full md:w-fit;
-    }
-
-    
-   
     .surface {
         @apply bg-white rounded-lg p-10 flex flex-col gap-4 mb-10 shadow-lg;
     }
 
-    .content {
-        @apply flex flex-col gap-8 mt-4;
+    .surface-center {
+        @apply w-full md:w-96 m-auto;
     }
 
-    .container {
-        @apply p-4 md:p-0;
+    .content {
+        @apply flex flex-col gap-2 mt-10 p-4 md:p-0 mx-auto;
     }
+
+    .comp-group > * {
+        @apply flex items-stretch;
+    }
+
 
     .material-icons-round {
         font-weight: normal;
